@@ -1,91 +1,139 @@
-#String
-x = "Hello World"
+#Python has no command for declaring a variable.
+name = "Mohamed Rifai"
+age = 25
+
+print(name)
+
+
+#Variables do not need to be declared with any particular type, and can even change type after they have been set.
+
+x = "Raafiya"
+x = 19
+
 print(x)
-#display the data type of x:
-print(type(x))
 
-#Integer
-x = 20
+
+#Casting
+
+#If you want to specify the data type ofa variable, this can be done with casting.
+
+x = str(3)
+y = int(3)
+z = float(3)
+
 print(x)
-#display the data type of x:
-print(type(x))
+print(y)
+print(z)
 
-#Float
-x = 20.5
+#You can get the data type ofa variable with the type() function.
+
+x = 5
+y = "Rifai"
+
+print(type(x))
+print(type(y))
+
+
+#String variables can be declared either by using single or double quotes:
+
+x = 'Mohamed Rifai'
+y = "Mohamed Rifai"
+
 print(x)
-#display the data type of x:
-print(type(x))
+print(y)
 
-#Complex
-x = 1j
+
+#Case Sensitive
+#Variable names are case-sensitive.
+#This will create two variables:
+
+a = 4
+A = "Rifai"
+
+print(a)
+print(A)
+
+
+#Legal Variable names
+
+myvar = "Rifai"
+my_var = "Rifai"
+_my_var = "Rifai"
+myVar = "Rifai"
+MYVAR = "Rifai"
+myvar2 = "Rifai"
+print(_my_var)
+
+
+## Assign multiple values
+
+x, y, z = ("Rifai", "Raafiya", 19)
 print(x)
-#display the data type of x:
-print(type(x))
+print(y)
+print(z)
 
-#List
-x = ["apple", "banana", "cherry"]
+
+#Output variables
+
+x = "I love python"
 print(x)
-#display the data type of x:
-print(type(x))
 
-#tuple
-x = ("apple", "banana", "cherry")
+
+#In the print() function, you output multiple variables, separated by a comma:
+x, y, z = ("Rifai", "Raafiya", 19)
+print(x, y, z)
+print(x+ y )  #You can also use the + operator to output multiple variables:
+
+
+
+#Global Variable
+
+x = "I love you Raafiya"
+
+
+def myfunc():
+    print("Hi my Dear " + x)
+
+myfunc()
+
+
+# If you use the global keyword, the variable belongs to the global scope:
+
+def myfunc():
+    global x
+    x = "Raafiyyyyyyyyyyyyya"
+
+myfunc()
 print(x)
-#display the data type of x:
-print(type(x))
+
+#To change the value of a global variable inside a function, refer to the variable by using the global keyword:
+
+x = "Fantastic"
+def myfunc():
+
+    global x
+    x = "Gorgeous"
+
+myfunc()
+
+print("Raafi is "+ x)
 
 
-#range
-x = range(6)
-print(x)
-#display the data type of x:
-print(type(x))
+fruits = ['apple', 'banana', 'cherry']
+a, b, c = fruits
+print(a)
 
 
-#dict
-x = {"name" : "John", "age" : 36}
-print(x)
-#display the data type of x:
-print(type(x))
+print("Hello", "World" )
 
-#Set
-x = {"apple", "banana", "cherry"}
-print(x)
-#display the data type of x:
-print(type(x))
+#Find this out
+a = 'Hello'
+b = 'World'
+print(a + b)
 
-#frozenset
-x = frozenset({"apple", "banana", "cherry"})
-print(x)
-#display the data type of x:
-print(type(x))
-
-#bool
-x = True
-print(x)
-#display the data type of x:
-print(type(x))
-
-#bytes
-x = b"Hello"
-print(x)
-#display the data type of x:
-print(type(x))
-
-#byteArray
-x = bytearray(5)
-print(x)
-#display the data type of x:
-print(type(x))
-
-#memoryview
-x = memoryview(bytes(5))
-print(x)
-#display the data type of x:
-print(type(x))
-
-#None
-x = None
-print(x)
-#display the data type of x:
-print(type(x))
+#.........
+x = 'awesome'
+def myfunc():
+  x = 'fantastic'
+myfunc()
+print('Python is ' + x)
